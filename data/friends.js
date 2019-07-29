@@ -83,7 +83,7 @@ var friendsArray = [
 	},
 	{
 		name: 'Mrs. Piggy',
-		photo: 'http://img.mindbodygreen.com/image/upload/c_limit,w_738,f_auto/ftr/Miss-Piggy-large-tonya-312.jpg',
+		photo: 'https://www.pinterest.com/pin/191966002845018141/',
 		scores: [
 			'1',
 			'1',
