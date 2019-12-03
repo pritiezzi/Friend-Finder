@@ -12,14 +12,16 @@ app.use(express.static(path.join(__dirname, './app/public')));
 
 // Add middleware for parsing incoming request bodies
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(bodyParser.text());
 
 // Add the application routes
 require('./routing/apiRoutes')(app);
-require( './routing/htmlRoutes')(app);
+require('./routing/htmlRoutes')(app);
 
 // Start listening on PORT
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log('Friend Finder app is listening on PORT: ' + PORT);
 });
